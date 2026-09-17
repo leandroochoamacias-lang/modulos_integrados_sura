@@ -1,0 +1,23 @@
+{
+  "name": "sura-backend-integrado",
+  "version": "1.0.0",
+  "description": "Backend integrado del proyecto Sura EPS: login, citas médicas y resultados de laboratorio (GA8-220501096-AA1)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node seed/seedCitas.js",
+    "seed:resultados": "node seed/seedResultados.js"
+  },
+  "author": "Leandro Ochoa Macías",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.24.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
